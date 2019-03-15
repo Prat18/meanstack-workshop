@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const config = require('./config/db');
 const path = require('path');
 const feedback = require('./routes/feedbackroute')(router);
+const bodyparser = require('body-parser');
 
 mongoose.connect(config.uri, (err) => {
     if(err){
@@ -13,6 +14,8 @@ mongoose.connect(config.uri, (err) => {
         console.log("Connected to database successfully: " + config.db);
     }
 })
+
+app.use(bodyparser.urlencoded({extended: false}));
 
 app.use(express.static(__dirname + '/client/dist/client'));
 app.use('/feedback', feedback);
