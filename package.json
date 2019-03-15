@@ -1,0 +1,25 @@
+{
+  "name": "meanstackworkshop",
+  "version": "1.0.0",
+  "description": "wt workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "prat__18",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.0",
+    "method-override": "~2.0.2",
+    "mongodb": "^3.0.5",
+    "mongoose": "^5.0.11",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "@angular/cli": "^7.3.5"
+  }
+}
